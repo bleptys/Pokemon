@@ -5,6 +5,22 @@
 <title>pokemon ultra</title>
 <meta name="description" content=>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	* {
+    box-sizing: border-box;
+}
+.search {
+    display: table;
+}
+.search-field,
+.search-control {
+    display: table-cell;
+    width: 100%;
+}
+.search-input {
+    width: 100%;
+}
+</style>
 </head>
 
 <body>
@@ -14,19 +30,29 @@
 			<li><a href=”ability.html”>ability</a></li>
 		</ul>
 	</nav>
+	
+<div class="search">
+    <div class="search-field">
+        <input type="text" class="search-input">
+    </div>
+    <div class="search-control">
+        <button class="search-button">Search</button>
+    </div>    
+</div>
+
 	<table border=”1”>
 <thead>
 <tr>
-<th>Název</th>
+<th>Pohyb</th>
 <th>Typ</th>
 <th>Druh</th>
 <th>POW.</th>
 <th>ACC.</th>
 <th>PP</th>
 <th>Dosah</th>
-<th>DA</th>
-<th>Z-Move</th>
-<th>Efekt</th>
+<th>Kontakt</th>
+<th>Z-Move POW./efekty</th>
+<th>Efekt v bitvě </th>
 </tr>
 </thead>
 <tbody>
@@ -35,9 +61,9 @@
 <td>Grass</td>
 <td>Special</td>
 <td>20</td>
-<td>100</td>
+<td>100%</td>
 <td>25</td>
-<td>Normal</td>
+<td>Cíl</td>
 <td>-</td>
 <td>100</td>
 <td>Obnoví tolik HP, jaká je polovina uděleného zranění.</td>
@@ -49,6 +75,9 @@
 <td>40</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl<td>
+<td>Kontakt</td>
+<td>100</td>
 <td>
 <tr>
 <td>Acid</td>
@@ -57,7 +86,11 @@
 <td>40</td>
 <td>100%</td>
 <td>30</td>
-<td>
+<td>Mnoho Dalších</td>
+<td>-</td>
+<td>100</td>
+<td>10% šance že udělíš -1 SpDef</td>
+</tr>
 <tr>
 <td>Acid Armor</td>
 <td>Poison</td>
@@ -65,7 +98,11 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
-<td>
+<td>+2 Def</td>
+<td>Já</td>
+<td>-</td>
+<td>Reset ↓ staty.</td>
+</tr>
 <tr>
 <td>Acid Spray</td>
 <td>Poison</td>
@@ -73,7 +110,11 @@
 <td>40</td>
 <td>100%</td>
 <td>20</td>
-<td>
+<td>Cíl</td>
+<td>-</td>
+<td>100</td>
+<td>-2 SpDef</td>
+</tr>
 <tr>
 <td>Acrobatics</td>
 <td>Flying</td>
@@ -81,7 +122,12 @@
 <td>55</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>100</td>
 <td>
+<td>Udělíš 2x DMG když nedržíš item</td>
+</tr>
 <tr>
 <td>Acupressure</td>
 <td>Normal</td>
@@ -89,7 +135,11 @@
 <td>-</td>
 <td>0%</td>
 <td>30</td>
-<td>
+<td>Já / Spojenec</td>
+<td>-</td>
+<td>+2 Krit.</td>
+<td>+2 náhodný stat</td>
+</tr>
 <tr>
 <td>Aerial Ace</td>
 <td>Flying</td>
@@ -97,7 +147,11 @@
 <td>60</td>
 <td>100%</td>
 <td>20</td>
-<td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>120</td>
+<td>Ignoruje ACC a Evasi</td>
+</tr>
 <tr>
 <td>Aeroblast</td>
 <td>Flying</td>
@@ -105,7 +159,11 @@
 <td>100</td>
 <td>95%</td>
 <td>5</td>
-<td>
+<td>Cíl</td>
+<td>-</td>
+<td>180</td>
+<td>+1 Critical</td>
+</tr>
 <tr>
 <td>After You</td>
 <td>Normal</td>
@@ -113,6 +171,9 @@
 <td>-</td>
 <td>0%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
+<td>Speed +1</td>
 <td>
 <tr>
 <td>Agility</td>
@@ -121,7 +182,11 @@
 <td>-</td>
 <td>0%</td>
 <td>30</td>
-<td>
+<td>Já</td>
+<td>-</td>
+<td>Reset ↓ stat</td>
+<td>+2 Spe</td>
+</tr>
 <tr>
 <td>Air Cutter</td>
 <td>Flying</td>
@@ -129,6 +194,9 @@
 <td>60</td>
 <td>95%</td>
 <td>25</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
+<td>120</td>
 <td>
 <tr>
 <td>Air Slash</td>
@@ -137,7 +205,11 @@
 <td>75</td>
 <td>95%</td>
 <td>20</td>
-<td>
+<td>Cíl</td>
+<td>-</td>
+<td>140</td>
+<td>30% šance na Flinch</td>
+</tr>
 <tr>
 <td>Ally Switch</td>
 <td>Psychic</td>
@@ -145,6 +217,9 @@
 <td>-</td>
 <td>0%</td>
 <td>15</td>
+<td>Já</td>
+<td>-</td>
+<td>Spe +2</td>
 <td>
 <tr>
 <td>Amnesia</td>
@@ -153,7 +228,11 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
-<td>
+<td>Já</td>
+<td>-</td>
+<td>Reset ↓ stat</td>
+<td>+2 SpDef</td>
+</tr>
 <tr>
 <td>Anchor Shot</td>
 <td>Steel</td>
@@ -161,6 +240,9 @@
 <td>80</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>160</td>
 <td>
 <tr>
 <td>Ancient Power</td>
@@ -169,7 +251,11 @@
 <td>60</td>
 <td>100%</td>
 <td>5</td>
-<td>
+<td>Cíl</td>
+<td>-</td>
+<td>120</td>
+<td>10% šance na  +1 all stats</td>
+</tr>
 <tr>
 <td>Aqua Jet</td>
 <td>Water</td>
@@ -177,7 +263,11 @@
 <td>40</td>
 <td>100%</td>
 <td>20</td>
-<td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>100</td>
+<td>Útočí jako první.</td>
+</tr>
 <tr>
 <td>Aqua Ring</td>
 <td>Water</td>
@@ -185,7 +275,11 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
-<td>
+<td>Já</td>
+<td>-</td>
+<td>Def +1</td>
+<td>Vyléčí malé množství HP.</td>
+</tr>
 <tr>
 <td>Aqua Tail</td>
 <td>Water</td>
@@ -193,7 +287,12 @@
 <td>90</td>
 <td>90%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>175</td>
 <td>
+<td></td>
+</tr>
 <tr>
 <td>Arm Thrust</td>
 <td>Fighting</td>
@@ -201,7 +300,11 @@
 <td>15</td>
 <td>100%</td>
 <td>20</td>
-<td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>100</td>
+<td>Hit 2-5x</td>
+</tr>
 <tr>
 <td>Aromatherapy</td>
 <td>Grass</td>
@@ -209,7 +312,11 @@
 <td>-</td>
 <td>0%</td>
 <td>5</td>
-<td>
+<td>Vaše Parta</td>
+<td>-</td>
+<td>Vyléčí HP na 100%</td>
+<td>Vyléčí všechny Statusy v partě.</td>
+</tr>
 <tr>
 <td>Aromatic Mist</td>
 <td>Fairy</td>
@@ -217,7 +324,11 @@
 <td>-</td>
 <td>100%</td>
 <td>20</td>
-<td>
+<td>1 Spojenec</td>
+<td>-</td>
+<td>SpDef +2</td>
+<td>+1 SpDef všem tvým v boji.</td>
+</tr>
 <tr>
 <td>Assist</td>
 <td>Normal</td>
@@ -225,7 +336,9 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
-<td>
+<td>Já</td>
+<td>-</td>
+<td>Nic</td>
 <tr>
 <td>Assurance</td>
 <td>Dark</td>
@@ -233,7 +346,11 @@
 <td>60</td>
 <td>100%</td>
 <td>10</td>
-<td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>120</td>
+<td>Pokud cíl již utrpěl poškození v tomto kole, síla útoku se zdvojnásobi (120).</td>
+</tr>
 <tr>
 <td>Astonish</td>
 <td>Ghost</td>
@@ -241,7 +358,11 @@
 <td>30</td>
 <td>100%</td>
 <td>15</td>
-<td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>100</td>
+<td>30% šance na Flinch</td>
+</tr>
 <tr>
 <td>Attack Order</td>
 <td>Bug</td>
@@ -249,7 +370,11 @@
 <td>90</td>
 <td>100%</td>
 <td>15</td>
-<td>
+<td>Cíl</td>
+<td>-</td>
+<td>175</td>
+<td>Udělí Critical Hit</td>
+</tr>
 <tr>
 <td>Attract</td>
 <td>Normal</td>
@@ -257,6 +382,9 @@
 <td>-</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
+<td>Reset ↓ staty</td>
 <td>
 <tr>
 <td>Aura Sphere</td>
@@ -265,7 +393,11 @@
 <td>80</td>
 <td>100%</td>
 <td>20</td>
-<td>
+<td>Cíl</td>
+<td>-</td>
+<td>160</td>
+<td>Ignoruje ACC a Evasi. Kromě Bounce, Dig, Dive, Fly, Shadow Force, Sky Drop.</td>
+</tr>
 <tr>
 <td>Aurora Beam</td>
 <td>Ice</td>
@@ -273,7 +405,11 @@
 <td>65</td>
 <td>100%</td>
 <td>20</td>
-<td>
+<td>Cíl</td>
+<td>-</td>
+<td>120</td>
+<td>10% šance na -1 Atk</td>
+</tr>
 <tr>
 <td>Aurora Veil</td>
 <td>Ice</td>
@@ -281,7 +417,10 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
-<td>
+<td>Vaše Strana</td>
+<td>-</td>
+<td>Spd +1</td>
+<td>Physical a Special útoky udělují poloviční dmg po dobu 5 kol.
 <tr>
 <td>Autotomize</td>
 <td>Steel</td>
@@ -289,7 +428,10 @@
 <td>-</td>
 <td>0%</td>
 <td>15</td>
-<td>
+<td>Já</td>
+<td>-</td>
+<td>Reset ↓ staty</td>
+<td>+2 Spe, váha se sníží o -220lbs(100kg)</td>
 <tr>
 <td>Avalanche</td>
 <td>Ice</td>
@@ -297,7 +439,10 @@
 <td>60</td>
 <td>100%</td>
 <td>10</td>
-<td>
+<td>Já</td>
+<td>Kontakt</td>
+<td>120</td>
+<td>Dvojtá DMG pokud udělíš zranění jako první.</td>
 <tr>
 <td>Baby-Doll Eyes</td>
 <td>Fairy</td>
@@ -305,7 +450,10 @@
 <td>-</td>
 <td>100%</td>
 <td>30</td>
-<td>
+<td>Cíl</td>
+<td>-</td>
+<td>Def +1</td>
+<td>Útočíš jako první. -1 Atk</td>
 <tr>
 <td>Baneful Bunker</td>
 <td>Poison</td>
@@ -313,7 +461,10 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
-<td>
+<td>Já</td>
+<td>-</td>
+<td>Def +1</td>
+<td>Protect + dojde-li ke kontaktu s jakýmkoliv útočníkem obdrží Poison</td>
 <tr>
 <td>Barrage</td>
 <td>Normal</td>
@@ -321,7 +472,10 @@
 <td>15</td>
 <td>85%</td>
 <td>20</td>
-<td>
+<td>Cíl</td>
+<td>-</td>
+<td>100</td>
+<td>2-5 hit v jednom kole</td>
 <tr>
 <td>Barrier</td>
 <td>Psychic</td>
@@ -329,7 +483,10 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
-<td>
+<td>Já</td>
+<td>-</td>
+<td>Reset ↓ staty</td>
+<td>+2 Def</td>
 <tr>
 <td>Baton Pass</td>
 <td>Normal</td>
@@ -337,7 +494,10 @@
 <td>-</td>
 <td>0%</td>
 <td>40</td>
-<td>
+<td>Já</td>
+<td>-</td>
+<td>Reset ↓ staty</td>
+<td>Uživatel se přepne a přenese všechny stat změny (včetně Perish Song)</td>
 <tr>
 <td>Beak Blast</td>
 <td>Flying</td>
@@ -345,7 +505,10 @@
 <td>100</td>
 <td>100%</td>
 <td>15</td>
-<td>
+<td>Cíl</td>
+<td>-</td>
+<td>180</td>
+<td>Způsobí cíli Burn</td>
 <tr>
 <td>Beat Up</td>
 <td>Dark</td>
@@ -353,6 +516,9 @@
 <td>-</td>
 <td>100%</td>
 <td>30</td>
+<td>Cíl</td>
+<td>-</td>
+<td>100</td>
 <td>
 <tr>
 <td>Belch</td>
@@ -361,6 +527,9 @@
 <td>120</td>
 <td>90%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
+<td>190</td>
 <td>
 <tr>
 <td>Belly Drum</td>
@@ -369,6 +538,9 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Já</td>
+<td>-</td>
+<td>Vyléčí HP na 100%</td>
 <td>
 <tr>
 <td>Bestow</td>
@@ -377,6 +549,9 @@
 <td>-</td>
 <td>0%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
+<td>Spd +2</td>
 <td>
 <tr>
 <td>Bide</td>
@@ -385,6 +560,9 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Já</td>
+<td>Kontakt</td>
+<td>100</td>
 <td>
 <tr>
 <td>Bind</td>
@@ -393,6 +571,9 @@
 <td>15</td>
 <td>85%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>100
 <td>
 <tr>
 <td>Bite</td>
@@ -401,6 +582,9 @@
 <td>60</td>
 <td>100%</td>
 <td>25</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>120
 <td>
 <tr>
 <td>Blast Burn</td>
@@ -409,6 +593,9 @@
 <td>150</td>
 <td>90%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
+<td>200</td>
 <td>
 <tr>
 <td>Blaze Kick</td>
@@ -417,6 +604,10 @@
 <td>85</td>
 <td>90%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>160</td>
+<td>
 <td>
 <tr>
 <td>Blizzard</td>
@@ -425,6 +616,9 @@
 <td>110</td>
 <td>70%</td>
 <td>5</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
+<td>185</td>
 <td>
 <tr>
 <td>Block</td>
@@ -433,6 +627,9 @@
 <td>-</td>
 <td>0%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
+<td>Def +1</td>
 <td>
 <tr>
 <td>Blue Flare</td>
@@ -441,6 +638,9 @@
 <td>130</td>
 <td>85%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
+<td>195</td>
 <td>
 <tr>
 <td>Body Slam</td>
@@ -449,6 +649,9 @@
 <td>85</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>160</td>
 <td>
 <tr>
 <td>Bolt Strike</td>
@@ -457,6 +660,9 @@
 <td>130</td>
 <td>85%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>195</td>
 <td>
 <tr>
 <td>Bone Club</td>
@@ -465,6 +671,9 @@
 <td>65</td>
 <td>85%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
+<td>120</td>
 <td>
 <tr>
 <td>Bone Rush</td>
@@ -473,6 +682,9 @@
 <td>25</td>
 <td>90%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
+<td>140</td>
 <td>
 <tr>
 <td>Bonemerang</td>
@@ -481,6 +693,9 @@
 <td>50</td>
 <td>90%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
+<td>100</td>
 <td>
 <tr>
 <td>Boomburst</td>
@@ -489,6 +704,10 @@
 <td>140</td>
 <td>100%</td>
 <td>10</td>
+<td>Sousedící</td>
+<td></td>
+<td>-</td>
+<td>200</td>
 <td>
 <tr>
 <td>Bounce</td>
@@ -497,6 +716,9 @@
 <td>85</td>
 <td>85%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>160</td>
 <td>
 <tr>
 <td>Brave Bird</td>
@@ -505,6 +727,9 @@
 <td>120</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>190</td>
 <td>
 <tr>
 <td>Brick Break</td>
@@ -513,6 +738,9 @@
 <td>75</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>140</td>
 <td>
 <tr>
 <td>Brine</td>
@@ -521,6 +749,9 @@
 <td>65</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
+<td>120</td>
 <td>
 <tr>
 <td>Brutal Swing</td>
@@ -529,6 +760,9 @@
 <td>60</td>
 <td>100%</td>
 <td>20</td>
+<td>Sousedící</td>
+<td>Kontakt</td>
+<td>120</td>
 <td>
 <tr>
 <td>Bubble</td>
@@ -537,6 +771,9 @@
 <td>40</td>
 <td>100%</td>
 <td>30</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
+<td>100</td>
 <td>
 <tr>
 <td>Bubble Beam</td>
@@ -545,6 +782,9 @@
 <td>65</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
+<td>120</td>
 <td>
 <tr>
 <td>Bug Bite</td>
@@ -553,6 +793,9 @@
 <td>60</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>120</td>
 <td>
 <tr>
 <td>Bug Buzz</td>
@@ -561,6 +804,9 @@
 <td>90</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
+<td>175</td>
 <td>
 <tr>
 <td>Bulk Up</td>
@@ -569,6 +815,9 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Já</td>
+<td>-</td>
+<td>Atk +1</td>
 <td>
 <tr>
 <td>Bulldoze</td>
@@ -577,14 +826,19 @@
 <td>60</td>
 <td>100%</td>
 <td>20</td>
+<td>Kontakt</td>
+<td>Sousední</td>
+<tr>120</td>
 <td>
-<tr>
 <td>Bullet Punch</td>
 <td>Steel</td>
 <td>Physical</td>
 <td>40</td>
 <td>100%</td>
 <td>30</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>100</td>
 <td>
 <tr>
 <td>Bullet Seed</td>
@@ -593,6 +847,9 @@
 <td>25</td>
 <td>100%</td>
 <td>30</td>
+<td>Cíl</td>
+<td>-</td>
+<td>140</td>
 <td>
 <tr>
 <td>Burn Up</td>
@@ -601,6 +858,9 @@
 <td>130</td>
 <td>100%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
+<td>195</td>
 <td>
 <tr>
 <td>Calm Mind</td>
@@ -609,6 +869,9 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Já</td>
+<td>-</td>
+<td>Reset ↓ staty</td>
 <td>
 <tr>
 <td>Camouflage</td>
@@ -617,6 +880,9 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Já</td>
+<td>-</td>
+<td>Evase +1</td>
 <td>
 <tr>
 <td>Captivate</td>
@@ -625,6 +891,9 @@
 <td>-</td>
 <td>100%</td>
 <td>20</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
+<td>SpD +2</td>
 <td>
 <tr>
 <td>Celebrate</td>
@@ -632,6 +901,10 @@
 <td>Status</td>
 <td>-</td>
 <td>0%</td>
+<td></td>
+<td>Já</td>
+<td>-</td>
+<td></td>
 <td>
 <tr>
 <td>Charge</td>
@@ -640,6 +913,9 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Já</td>
+<td>-</td>
+<td>SpD +1</td>
 <td>
 <tr>
 <td>Charge Beam</td>
@@ -648,6 +924,9 @@
 <td>50</td>
 <td>90%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
+<td>100</td>
 <td>
 <tr>
 <td>Charm</td>
@@ -656,6 +935,9 @@
 <td>-</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
+<td>Def +1</td>
 <td>
 <tr>
 <td>Chatter</td>
@@ -664,6 +946,9 @@
 <td>65</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
+<td>120</td>
 <td>
 <tr>
 <td>Chip Away</td>
@@ -672,6 +957,9 @@
 <td>70</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>140</td>
 <td>
 <tr>
 <td>Circle Throw</td>
@@ -680,6 +968,9 @@
 <td>60</td>
 <td>90%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>120</td>
 <td>
 <tr>
 <td>Clamp</td>
@@ -688,6 +979,9 @@
 <td>35</td>
 <td>85%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>100</td>
 <td>
 <tr>
 <td>Clanging Scales</td>
@@ -696,6 +990,9 @@
 <td>110</td>
 <td>100%</td>
 <td>5</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
+<td>185</td>
 <td>
 <tr>
 <td>Clear Smog</td>
@@ -704,7 +1001,9 @@
 <td>50</td>
 <td>0%</td>
 <td>15</td>
-<td>
+<td>Cíl</td>
+<td>-</td>
+<td>100
 <tr>
 <td>Close Combat</td>
 <td>Fighting</td>
@@ -712,6 +1011,9 @@
 <td>120</td>
 <td>100%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>190</td>
 <td>
 <tr>
 <td>Coil</td>
@@ -720,6 +1022,9 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Já</td>
+<td>-</td>
+<td>Reset ↓ staty</td>
 <td>
 <tr>
 <td>Comet Punch</td>
@@ -728,6 +1033,9 @@
 <td>18</td>
 <td>85%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>100</td>
 <td>
 <tr>
 <td>Confide</td>
@@ -736,6 +1044,9 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
+<td>SpD +1</td>
 <td>
 <tr>
 <td>Confuse Ray</td>
@@ -744,6 +1055,9 @@
 <td>-</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
+<td>SpA +1</td>
 <td>
 <tr>
 <td>Confusion</td>
@@ -752,6 +1066,9 @@
 <td>50</td>
 <td>100%</td>
 <td>25</td>
+<td>Cíl</td>
+<td>-</td>
+<td>100</td>
 <td>
 <tr>
 <td>Constrict</td>
@@ -760,6 +1077,9 @@
 <td>10</td>
 <td>100%</td>
 <td>35</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>100</td>
 <td>
 <tr>
 <td>Conversion</td>
@@ -768,6 +1088,9 @@
 <td>-</td>
 <td>0%</td>
 <td>30</td>
+<td>Já</td>
+<td>-</td>
+<td>Všechny staty +1</td>
 <td>
 <tr>
 <td>Conversion 2</td>
@@ -776,6 +1099,9 @@
 <td>-</td>
 <td>0%</td>
 <td>30</td>
+<td>Cíl</td>
+<td>-</td>
+<td>Vyléčí HP na 100%</td>
 <td>
 <tr>
 <td>Copycat</td>
@@ -784,6 +1110,9 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Já</td>
+<td>-</td>
+<td>ACC +1</td>
 <td>
 <tr>
 <td>Core Enforcer</td>
@@ -792,6 +1121,9 @@
 <td>100</td>
 <td>100%</td>
 <td>10</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
+<td>140</td>
 <td>
 <tr>
 <td>Cosmic Power</td>
@@ -800,6 +1132,9 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Já</td>
+<td>-</td>
+<td>SpD +1</td>
 <td>
 <tr>
 <td>Cotton Guard</td>
@@ -808,6 +1143,9 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Já</td>
+<td>-</td>
+<td>Reset ↓ stat</td>
 <td>
 <tr>
 <td>Cotton Spore</td>
@@ -816,6 +1154,9 @@
 <td>-</td>
 <td>100%</td>
 <td>40</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
+<td>Reset ↓ staty</td>
 <td>
 <tr>
 <td>Counter</td>
@@ -824,6 +1165,9 @@
 <td>-</td>
 <td>100%</td>
 <td>20</td>
+<td>Různé</td>
+<td>Kontakt</td>
+<td>100</td>
 <td>
 <tr>
 <td>Covet</td>
@@ -832,6 +1176,9 @@
 <td>60</td>
 <td>100%</td>
 <td>25</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>120</td>
 <td>
 <tr>
 <td>Crabhammer</td>
@@ -840,6 +1187,9 @@
 <td>100</td>
 <td>90%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>180</td>
 <td>
 <tr>
 <td>Crafty Shield</td>
@@ -848,6 +1198,9 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Vaše Strana</td>
+<td>-</td>
+<td>SpD +1</td>
 <td>
 <tr>
 <td>Cross Chop</td>
@@ -856,6 +1209,9 @@
 <td>100</td>
 <td>80%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>180</td>
 <td>
 <tr>
 <td>Cross Poison</td>
@@ -864,6 +1220,9 @@
 <td>70</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>140</td>
 <td>
 <tr>
 <td>Crunch</td>
@@ -872,6 +1231,10 @@
 <td>80</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>160</td>
+<td>
 <td>
 <tr>
 <td>Crush Claw</td>
@@ -880,6 +1243,9 @@
 <td>75</td>
 <td>95%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>140</td>
 <td>
 <tr>
 <td>Crush Grip</td>
@@ -888,6 +1254,9 @@
 <td>-</td>
 <td>100%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>190</td>
 <td>
 <tr>
 <td>Curse</td>
@@ -896,6 +1265,9 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Různé</td>
+<td>-</td>
+<td>Ghost si vyléčí HP na 100% v opačném případě Atk +1</td>
 <td>
 <tr>
 <td>Cut</td>
@@ -904,6 +1276,9 @@
 <td>50</td>
 <td>95%</td>
 <td>30</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>100</td>
 <td>
 <tr>
 <td>Dark Pulse</td>
@@ -912,6 +1287,9 @@
 <td>80</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
+<td>160</td>
 <td>
 <tr>
 <td>Dark Void</td>
@@ -920,6 +1298,9 @@
 <td>-</td>
 <td>50%</td>
 <td>10</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
+<td>Reset ↓ staty</td>
 <td>
 <tr>
 <td>Darkest Lariat</td>
@@ -928,6 +1309,9 @@
 <td>85</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>160</td>
 <td>
 <tr>
 <td>Dazzling Gleam</td>
@@ -936,6 +1320,9 @@
 <td>80</td>
 <td>100%</td>
 <td>10</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
+<td>160</td>
 <td>
 <tr>
 <td>Defend Order</td>
@@ -944,6 +1331,9 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Já</td>
+<td>-</td>
+<td>Def +1</td>
 <td>
 <tr>
 <td>Defense Curl</td>
@@ -952,6 +1342,9 @@
 <td>-</td>
 <td>0%</td>
 <td>40</td>
+<td>Já</td>
+<td>-</td>
+<td>ACC +1</td>
 <td>
 <tr>
 <td>Defog</td>
@@ -960,6 +1353,9 @@
 <td>-</td>
 <td>0%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
+<td>ACC +1</td>
 <td>
 <tr>
 <td>Destiny Bond</td>
@@ -968,6 +1364,9 @@
 <td>-</td>
 <td>0%</td>
 <td>5</td>
+<td>Já</td>
+<td>-</td>
+<td>Nepřátelské pohyby přesměruješ na sebe</td>
 <td>
 <tr>
 <td>Detect</td>
@@ -976,6 +1375,9 @@
 <td>-</td>
 <td>0%</td>
 <td>5</td>
+<td>Já</td>
+<td>-</td>
+<td>Evase +1</td>
 <td>
 <tr>
 <td>Diamond Storm</td>
@@ -984,6 +1386,9 @@
 <td>100</td>
 <td>95%</td>
 <td>5</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
+<td>180</td>
 <td>
 <tr>
 <td>Dig</td>
@@ -992,6 +1397,9 @@
 <td>80</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>160</td>
 <td>
 <tr>
 <td>Disable</td>
@@ -1000,6 +1408,9 @@
 <td>-</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
+<td>Reset ↓ staty</td>
 <td>
 <tr>
 <td>Disarming Voice</td>
@@ -1008,6 +1419,9 @@
 <td>40</td>
 <td>100%</td>
 <td>15</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
+<td>100</td>
 <td>
 <tr>
 <td>Discharge</td>
@@ -1016,6 +1430,9 @@
 <td>80</td>
 <td>100%</td>
 <td>15</td>
+<td>Sousedící</td>
+<td>-</td>
+<td>160</td>
 <td>
 <tr>
 <td>Dive</td>
@@ -1024,6 +1441,9 @@
 <td>80</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>160</td>
 <td>
 <tr>
 <td>Dizzy Punch</td>
@@ -1032,6 +1452,9 @@
 <td>70</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>140</td>
 <td>
 <tr>
 <td>Doom Desire</td>
@@ -1040,6 +1463,9 @@
 <td>140</td>
 <td>100%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
+<td>200</td>
 <td>
 <tr>
 <td>Double Hit</td>
@@ -1048,6 +1474,9 @@
 <td>35</td>
 <td>90%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>140</td>
 <td>
 <tr>
 <td>Double Kick</td>
@@ -1056,6 +1485,9 @@
 <td>30</td>
 <td>100%</td>
 <td>30</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>100</td>
 <td>
 <tr>
 <td>Double Slap</td>
@@ -1064,6 +1496,9 @@
 <td>15</td>
 <td>85%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>100</td>
 <td>
 <tr>
 <td>Double Team</td>
@@ -1072,6 +1507,9 @@
 <td>-</td>
 <td>0%</td>
 <td>15</td>
+<td>Já</td>
+<td>-</td>
+<td>Reset ↓ staty</td>
 <td>
 <tr>
 <td>Double-Edge</td>
@@ -1080,6 +1518,9 @@
 <td>120</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>190</td>
 <td>
 <tr>
 <td>Draco Meteor</td>
@@ -1088,6 +1529,9 @@
 <td>130</td>
 <td>90%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
+<td>195</td>
 <td>
 <tr>
 <td>Dragon Ascent</td>
@@ -1096,6 +1540,9 @@
 <td>120</td>
 <td>100%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>190</td>
 <td>
 <tr>
 <td>Dragon Breath</td>
@@ -1104,6 +1551,9 @@
 <td>60</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
+<td>120</td>
 <td>
 <tr>
 <td>Dragon Claw</td>
@@ -1112,6 +1562,9 @@
 <td>80</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>160</td>
 <td>
 <tr>
 <td>Dragon Dance</td>
@@ -1120,6 +1573,9 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Já</td>
+<td>-</td>
+<td>Reset ↓ staty</td>
 <td>
 <tr>
 <td>Dragon Hammer</td>
@@ -1128,6 +1584,9 @@
 <td>90</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>175</td>
 <td>
 <tr>
 <td>Dragon Pulse</td>
@@ -1136,6 +1595,9 @@
 <td>85</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
+<td>160</td>
 <td>
 <tr>
 <td>Dragon Rage</td>
@@ -1144,6 +1606,9 @@
 <td>-</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
+<td>100</td>
 <td>
 <tr>
 <td>Dragon Rush</td>
@@ -1152,6 +1617,9 @@
 <td>100</td>
 <td>75%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>180</td>
 <td>
 <tr>
 <td>Dragon Tail</td>
@@ -1160,6 +1628,9 @@
 <td>60</td>
 <td>90%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>120</td>
 <td>
 <tr>
 <td>Drain Punch</td>
@@ -1168,6 +1639,9 @@
 <td>75</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>140</td>
 <td>
 <tr>
 <td>Draining Kiss</td>
@@ -1176,6 +1650,9 @@
 <td>50</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>100</td>
 <td>
 <tr>
 <td>Dream Eater</td>
@@ -1184,6 +1661,9 @@
 <td>100</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
+<td>180</td>
 <td>
 <tr>
 <td>Drill Peck</td>
@@ -1192,6 +1672,9 @@
 <td>80</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>160</td>
 <td>
 <tr>
 <td>Drill Run</td>
@@ -1200,6 +1683,9 @@
 <td>80</td>
 <td>95%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>160</td>
 <td>
 <tr>
 <td>Dual Chop</td>
@@ -1208,6 +1694,9 @@
 <td>40</td>
 <td>90%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>100</td>
 <td>
 <tr>
 <td>Dynamic Punch</td>
@@ -1216,6 +1705,9 @@
 <td>100</td>
 <td>50%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>180</td>
 <td>
 <tr>
 <td>Earth Power</td>
@@ -1224,6 +1716,9 @@
 <td>90</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
+<td>175</td>
 <td>
 <tr>
 <td>Earthquake</td>
@@ -1232,6 +1727,9 @@
 <td>100</td>
 <td>100%</td>
 <td>10</td>
+<td>Sousedící</td>
+<td>-</td>
+<td>180</td>
 <td>
 <tr>
 <td>Echoed Voice</td>
@@ -1240,6 +1738,9 @@
 <td>40</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
+<td>100</td>
 <td>
 <tr>
 <td>Eerie Impulse</td>
@@ -1248,6 +1749,9 @@
 <td>-</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
+<td>SpD +1</td>
 <td>
 <tr>
 <td>Egg Bomb</td>
@@ -1256,6 +1760,8 @@
 <td>100</td>
 <td>75%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Electric Terrain</td>
@@ -1264,6 +1770,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Obě Strany</td>
+<td>-</td>
 <td>
 <tr>
 <td>Electrify</td>
@@ -1272,6 +1780,8 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Electro Ball</td>
@@ -1280,6 +1790,8 @@
 <td>-</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Electroweb</td>
@@ -1288,6 +1800,8 @@
 <td>55</td>
 <td>95%</td>
 <td>15</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Embargo</td>
@@ -1296,6 +1810,8 @@
 <td>-</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Ember</td>
@@ -1304,6 +1820,8 @@
 <td>40</td>
 <td>100%</td>
 <td>25</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Encore</td>
@@ -1312,6 +1830,8 @@
 <td>-</td>
 <td>100%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Endeavor</td>
@@ -1320,6 +1840,9 @@
 <td>-</td>
 <td>100%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Endure</td>
@@ -1328,6 +1851,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Energy Ball</td>
@@ -1336,6 +1861,8 @@
 <td>90</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Entrainment</td>
@@ -1344,6 +1871,8 @@
 <td>-</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Eruption</td>
@@ -1352,6 +1881,8 @@
 <td>150</td>
 <td>100%</td>
 <td>5</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Explosion</td>
@@ -1360,6 +1891,8 @@
 <td>250</td>
 <td>100%</td>
 <td>5</td>
+<td>Sousedící</td>
+<td>-</td>
 <td>
 <tr>
 <td>Extrasensory</td>
@@ -1368,6 +1901,8 @@
 <td>80</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Extreme Speed</td>
@@ -1376,6 +1911,9 @@
 <td>80</td>
 <td>0%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Facade</td>
@@ -1384,6 +1922,9 @@
 <td>70</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Fairy Lock</td>
@@ -1392,6 +1933,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Obě Strany</td>
+<td>-</td>
 <td>
 <tr>
 <td>Fairy Wind</td>
@@ -1400,6 +1943,8 @@
 <td>40</td>
 <td>100%</td>
 <td>30</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Fake Out</td>
@@ -1408,6 +1953,9 @@
 <td>40</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Fake Tears</td>
@@ -1416,6 +1964,8 @@
 <td>-</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>False Swipe</td>
@@ -1424,6 +1974,9 @@
 <td>40</td>
 <td>100%</td>
 <td>40</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Feather Dance</td>
@@ -1432,6 +1985,8 @@
 <td>-</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Feint</td>
@@ -1440,6 +1995,8 @@
 <td>30</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Feint Attack</td>
@@ -1448,6 +2005,9 @@
 <td>60</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Fell Stinger</td>
@@ -1456,6 +2016,9 @@
 <td>50</td>
 <td>100%</td>
 <td>25</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Fiery Dance</td>
@@ -1464,6 +2027,8 @@
 <td>80</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Final Gambit</td>
@@ -1472,6 +2037,8 @@
 <td>-</td>
 <td>100%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Fire Blast</td>
@@ -1480,6 +2047,8 @@
 <td>110</td>
 <td>85%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Fire Fang</td>
@@ -1488,6 +2057,9 @@
 <td>65</td>
 <td>95%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Fire Lash</td>
@@ -1496,6 +2068,9 @@
 <td>80</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Fire Pledge</td>
@@ -1504,6 +2079,8 @@
 <td>80</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Fire Punch</td>
@@ -1512,6 +2089,9 @@
 <td>75</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Fire Spin</td>
@@ -1520,6 +2100,8 @@
 <td>35</td>
 <td>85%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>First Impression</td>
@@ -1528,6 +2110,9 @@
 <td>90</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Fissure</td>
@@ -1536,6 +2121,8 @@
 <td>-</td>
 <td>0%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Flail</td>
@@ -1544,6 +2131,9 @@
 <td>-</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Flame Burst</td>
@@ -1552,6 +2142,8 @@
 <td>70</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Flame Charge</td>
@@ -1560,6 +2152,9 @@
 <td>50</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Flame Wheel</td>
@@ -1568,6 +2163,9 @@
 <td>60</td>
 <td>100%</td>
 <td>25</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Flamethrower</td>
@@ -1576,6 +2174,8 @@
 <td>90</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Flare Blitz</td>
@@ -1584,14 +2184,19 @@
 <td>120</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Flash</td>
-<td>normal</td>
+<td>Normal</td>
 <td>Status</td>
 <td>-</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Flash Cannon</td>
@@ -1600,6 +2205,8 @@
 <td>80</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Flatter</td>
@@ -1608,6 +2215,8 @@
 <td>-</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Fleur Cannon</td>
@@ -1616,6 +2225,8 @@
 <td>130</td>
 <td>90%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Fling</td>
@@ -1624,6 +2235,8 @@
 <td>-</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Floral Healing</td>
@@ -1632,6 +2245,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Flower Shield</td>
@@ -1640,6 +2255,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Různé</td>
+<td>-</td>
 <td>
 <tr>
 <td>Fly</td>
@@ -1648,6 +2265,9 @@
 <td>90</td>
 <td>95%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Flying Press</td>
@@ -1656,6 +2276,9 @@
 <td>100</td>
 <td>95%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Focus Blast</td>
@@ -1664,6 +2287,8 @@
 <td>120</td>
 <td>70%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Focus Energy</td>
@@ -1672,6 +2297,8 @@
 <td>-</td>
 <td>0%</td>
 <td>30</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Focus Punch</td>
@@ -1680,6 +2307,9 @@
 <td>150</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Follow Me</td>
@@ -1688,6 +2318,8 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Force Palm</td>
@@ -1696,6 +2328,9 @@
 <td>60</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Foresight</td>
@@ -1704,6 +2339,8 @@
 <td>-</td>
 <td>0%</td>
 <td>40</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Forest's Curse</td>
@@ -1712,6 +2349,8 @@
 <td>-</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Foul Play</td>
@@ -1720,6 +2359,9 @@
 <td>95</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Freeze Shock</td>
@@ -1728,6 +2370,8 @@
 <td>140</td>
 <td>90%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Freeze-Dry</td>
@@ -1736,6 +2380,8 @@
 <td>70</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Frenzy Plant</td>
@@ -1744,6 +2390,8 @@
 <td>150</td>
 <td>90%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Frost Breath</td>
@@ -1752,6 +2400,8 @@
 <td>60</td>
 <td>90%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Frustration</td>
@@ -1760,6 +2410,9 @@
 <td>-</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Fury Attack</td>
@@ -1768,6 +2421,9 @@
 <td>15</td>
 <td>85%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Fury Cutter</td>
@@ -1776,6 +2432,9 @@
 <td>40</td>
 <td>95%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Fury Swipes</td>
@@ -1784,6 +2443,9 @@
 <td>18</td>
 <td>80%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Fusion Bolt</td>
@@ -1792,6 +2454,8 @@
 <td>100</td>
 <td>100%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Fusion Flare</td>
@@ -1800,6 +2464,8 @@
 <td>100</td>
 <td>100%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Future Sight</td>
@@ -1808,6 +2474,8 @@
 <td>120</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Gastro Acid</td>
@@ -1816,6 +2484,8 @@
 <td>-</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Gear Grind</td>
@@ -1824,6 +2494,9 @@
 <td>50</td>
 <td>85%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Gear Up</td>
@@ -1832,6 +2505,8 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Vaše Parta</td>
+<td>-</td>
 <td>
 <tr>
 <td>Geomancy</td>
@@ -1840,6 +2515,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Giga Drain</td>
@@ -1848,6 +2525,9 @@
 <td>75</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Giga Impact</td>
@@ -1856,6 +2536,8 @@
 <td>150</td>
 <td>90%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Glaciate</td>
@@ -1864,6 +2546,8 @@
 <td>65</td>
 <td>95%</td>
 <td>10</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Glare</td>
@@ -1872,6 +2556,8 @@
 <td>-</td>
 <td>100%</td>
 <td>30</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Grass Knot</td>
@@ -1880,6 +2566,9 @@
 <td>-</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Grass Pledge</td>
@@ -1888,6 +2577,8 @@
 <td>80</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Grass Whistle</td>
@@ -1896,6 +2587,8 @@
 <td>-</td>
 <td>55%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Grassy Terrain</td>
@@ -1904,6 +2597,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Obě Strany</td>
+<td>-</td>
 <td>
 <tr>
 <td>Gravity</td>
@@ -1912,6 +2607,8 @@
 <td>-</td>
 <td>0%</td>
 <td>5</td>
+<td>Obě Strany</td>
+<td>-</td>
 <td>
 <tr>
 <td>Growl</td>
@@ -1920,6 +2617,8 @@
 <td>-</td>
 <td>100%</td>
 <td>40</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Growth</td>
@@ -1928,6 +2627,8 @@
 <td>-</td>
 <td>0%</td>
 <td>40</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Grudge</td>
@@ -1936,6 +2637,8 @@
 <td>-</td>
 <td>0%</td>
 <td>5</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Guard Split</td>
@@ -1944,6 +2647,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Guard Swap</td>
@@ -1952,6 +2657,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Guillotine</td>
@@ -1960,6 +2667,9 @@
 <td>-</td>
 <td>0%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Gunk Shot</td>
@@ -1968,6 +2678,8 @@
 <td>120</td>
 <td>80%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Gust</td>
@@ -1976,6 +2688,8 @@
 <td>40</td>
 <td>100%</td>
 <td>35</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Gyro Ball</td>
@@ -1984,6 +2698,9 @@
 <td>-</td>
 <td>100%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Hail</td>
@@ -1992,6 +2709,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Obě Strany</td>
+<td>-</td>
 <td>
 <tr>
 <td>Hammer Arm</td>
@@ -2000,6 +2719,9 @@
 <td>100</td>
 <td>90%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Happy Hour</td>
@@ -2008,6 +2730,8 @@
 <td>-</td>
 <td>0%</td>
 <td>30</td>
+<td>Vaše Strana</td>
+<td>-</td>
 <td>
 <tr>
 <td>Harden</td>
@@ -2016,6 +2740,8 @@
 <td>-</td>
 <td>0%</td>
 <td>30</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Haze</td>
@@ -2024,6 +2750,8 @@
 <td>-</td>
 <td>0%</td>
 <td>30</td>
+<td>Obě Strany</td>
+<td>-</td>
 <td>
 <tr>
 <td>Head Charge</td>
@@ -2032,6 +2760,9 @@
 <td>120</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Head Smash</td>
@@ -2040,6 +2771,9 @@
 <td>150</td>
 <td>80%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Headbutt</td>
@@ -2048,6 +2782,9 @@
 <td>70</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Heal Bell</td>
@@ -2056,6 +2793,8 @@
 <td>-</td>
 <td>0%</td>
 <td>5</td>
+<td>Vaše Parta</td>
+<td>-</td>
 <td>
 <tr>
 <td>Heal Block</td>
@@ -2064,6 +2803,8 @@
 <td>-</td>
 <td>0%</td>
 <td>15</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Heal Order</td>
@@ -2072,6 +2813,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Heal Pulse</td>
@@ -2080,6 +2823,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Healing Wish</td>
@@ -2088,6 +2833,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Heart Stamp</td>
@@ -2096,6 +2843,9 @@
 <td>60</td>
 <td>100%</td>
 <td>25</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Heart Swap</td>
@@ -2104,6 +2854,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Heat Crash</td>
@@ -2112,6 +2864,9 @@
 <td>-</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Heat Wave</td>
@@ -2120,6 +2875,8 @@
 <td>95</td>
 <td>90%</td>
 <td>10</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Heavy Slam</td>
@@ -2128,6 +2885,9 @@
 <td>-</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Helping Hand</td>
@@ -2136,7 +2896,7 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
-<td>
+<td>1 ally
 <tr>
 <td>Hex</td>
 <td>Ghost</td>
@@ -2144,6 +2904,8 @@
 <td>65</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Hidden Power</td>
@@ -2152,6 +2914,8 @@
 <td>60</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>High Horsepower</td>
@@ -2160,6 +2924,9 @@
 <td>95</td>
 <td>95%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>High Jump Kick</td>
@@ -2168,6 +2935,9 @@
 <td>130</td>
 <td>90%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Hold Back</td>
@@ -2176,14 +2946,29 @@
 <td>40</td>
 <td>100%</td>
 <td>40</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
+<tr>
+<td>Hold Hands</td>
+<td>Normal</td>
+<td>Status</td>
+<td>-</td>
+<td>-</td>
+<td>40</td>
+<td>1 Spojenec</td>
+<td>
+<td>
 <td>Hone Claws</td>
 <td>Dark</td>
 <td>Status</td>
 <td>-</td>
 <td>0%</td>
 <td>15</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Horn Attack</td>
@@ -2192,6 +2977,9 @@
 <td>65</td>
 <td>100%</td>
 <td>25</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Horn Drill</td>
@@ -2200,6 +2988,9 @@
 <td>-</td>
 <td>0%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Horn Leech</td>
@@ -2208,6 +2999,9 @@
 <td>75</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Howl</td>
@@ -2216,6 +3010,8 @@
 <td>-</td>
 <td>0%</td>
 <td>40</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Hurricane</td>
@@ -2224,6 +3020,8 @@
 <td>110</td>
 <td>70%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Hydro Cannon</td>
@@ -2232,6 +3030,8 @@
 <td>150</td>
 <td>90%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Hydro Pump</td>
@@ -2240,6 +3040,8 @@
 <td>110</td>
 <td>80%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Hyper Beam</td>
@@ -2248,6 +3050,8 @@
 <td>150</td>
 <td>90%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Hyper Fang</td>
@@ -2256,6 +3060,9 @@
 <td>80</td>
 <td>90%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Hyper Voice</td>
@@ -2264,6 +3071,8 @@
 <td>90</td>
 <td>100%</td>
 <td>10</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Hyperspace Fury</td>
@@ -2272,6 +3081,8 @@
 <td>100</td>
 <td>0%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Hyperspace Hole</td>
@@ -2280,6 +3091,8 @@
 <td>80</td>
 <td>100%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Hypnosis</td>
@@ -2288,6 +3101,8 @@
 <td>-</td>
 <td>60%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Ice Ball</td>
@@ -2296,6 +3111,9 @@
 <td>30</td>
 <td>90%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Ice Beam</td>
@@ -2304,6 +3122,8 @@
 <td>90</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Ice Burn</td>
@@ -2312,6 +3132,8 @@
 <td>140</td>
 <td>90%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Ice Fang</td>
@@ -2320,6 +3142,9 @@
 <td>65</td>
 <td>95%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Ice Hammer</td>
@@ -2328,6 +3153,9 @@
 <td>100</td>
 <td>90%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Ice Punch</td>
@@ -2336,6 +3164,9 @@
 <td>75</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Ice Shard</td>
@@ -2344,6 +3175,8 @@
 <td>40</td>
 <td>100%</td>
 <td>30</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Icicle Crash</td>
@@ -2352,6 +3185,8 @@
 <td>85</td>
 <td>90%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Icicle Spear</td>
@@ -2360,6 +3195,8 @@
 <td>25</td>
 <td>100%</td>
 <td>30</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Icy Wind</td>
@@ -2368,6 +3205,8 @@
 <td>55</td>
 <td>100%</td>
 <td>15</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Imprison</td>
@@ -2376,6 +3215,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Incinerate</td>
@@ -2384,6 +3225,8 @@
 <td>60</td>
 <td>100%</td>
 <td>15</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Inferno</td>
@@ -2392,6 +3235,8 @@
 <td>100</td>
 <td>50%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Infestation</td>
@@ -2400,6 +3245,9 @@
 <td>20</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Ingrain</td>
@@ -2408,6 +3256,8 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Instruct</td>
@@ -2416,6 +3266,8 @@
 <td>-</td>
 <td>0%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Ion Deluge</td>
@@ -2424,6 +3276,8 @@
 <td>-</td>
 <td>0%</td>
 <td>25</td>
+<td>Obě Strany</td>
+<td>-</td>
 <td>
 <tr>
 <td>Iron Defense</td>
@@ -2432,6 +3286,8 @@
 <td>-</td>
 <td>0%</td>
 <td>15</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Iron Head</td>
@@ -2440,6 +3296,9 @@
 <td>80</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Iron Tail</td>
@@ -2448,6 +3307,9 @@
 <td>100</td>
 <td>75%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Judgment</td>
@@ -2456,6 +3318,8 @@
 <td>100</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Jump Kick</td>
@@ -2464,6 +3328,9 @@
 <td>100</td>
 <td>95%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Karate Chop</td>
@@ -2472,6 +3339,9 @@
 <td>50</td>
 <td>100%</td>
 <td>25</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Kinesis</td>
@@ -2480,6 +3350,8 @@
 <td>-</td>
 <td>80%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>King's Shield</td>
@@ -2488,6 +3360,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Knock Off</td>
@@ -2496,6 +3370,9 @@
 <td>65</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Land's Wrath</td>
@@ -2504,6 +3381,8 @@
 <td>90</td>
 <td>100%</td>
 <td>10</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Laser Focus</td>
@@ -2512,6 +3391,8 @@
 <td>-</td>
 <td>0%</td>
 <td>30</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Last Resort</td>
@@ -2520,6 +3401,9 @@
 <td>140</td>
 <td>100%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Lava Plume</td>
@@ -2528,6 +3412,8 @@
 <td>80</td>
 <td>100%</td>
 <td>15</td>
+<td>Sousedící</td>
+<td>-</td>
 <td>
 <tr>
 <td>Leaf Blade</td>
@@ -2536,6 +3422,9 @@
 <td>90</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Leaf Storm</td>
@@ -2544,6 +3433,8 @@
 <td>130</td>
 <td>90%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Leaf Tornado</td>
@@ -2552,6 +3443,8 @@
 <td>65</td>
 <td>90%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Leafage</td>
@@ -2560,6 +3453,8 @@
 <td>40</td>
 <td>100%</td>
 <td>40</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Leech Life</td>
@@ -2568,6 +3463,9 @@
 <td>80</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Leech Seed</td>
@@ -2576,6 +3474,8 @@
 <td>-</td>
 <td>90%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Leer</td>
@@ -2584,6 +3484,8 @@
 <td>-</td>
 <td>100%</td>
 <td>30</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Lick</td>
@@ -2592,6 +3494,9 @@
 <td>30</td>
 <td>100%</td>
 <td>30</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Light Screen</td>
@@ -2600,6 +3505,8 @@
 <td>-</td>
 <td>0%</td>
 <td>30</td>
+<td>Vaše Strana</td>
+<td>-</td>
 <td>
 <tr>
 <td>Liquidation</td>
@@ -2608,6 +3515,9 @@
 <td>85</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Lock-On</td>
@@ -2616,6 +3526,8 @@
 <td>-</td>
 <td>0%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Lovely Kiss</td>
@@ -2624,6 +3536,8 @@
 <td>-</td>
 <td>75%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Low Kick</td>
@@ -2632,6 +3546,9 @@
 <td>-</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Low Sweep</td>
@@ -2640,6 +3557,9 @@
 <td>65</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Lucky Chant</td>
@@ -2648,6 +3568,8 @@
 <td>-</td>
 <td>0%</td>
 <td>30</td>
+<td>Vaše Strana</td>
+<td>-</td>
 <td>
 <tr>
 <td>Lunar Dance</td>
@@ -2656,6 +3578,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Lunge</td>
@@ -2664,6 +3588,9 @@
 <td>80</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Luster Purge</td>
@@ -2672,6 +3599,8 @@
 <td>70</td>
 <td>100%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Mach Punch</td>
@@ -2680,6 +3609,9 @@
 <td>40</td>
 <td>100%</td>
 <td>30</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Magic Coat</td>
@@ -2688,6 +3620,8 @@
 <td>-</td>
 <td>0%</td>
 <td>15</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Magic Room</td>
@@ -2696,6 +3630,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Obě Strany</td>
+<td>-</td>
 <td>
 <tr>
 <td>Magical Leaf</td>
@@ -2704,6 +3640,8 @@
 <td>60</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Magma Storm</td>
@@ -2712,6 +3650,8 @@
 <td>120</td>
 <td>75%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Magnet Bomb</td>
@@ -2720,6 +3660,8 @@
 <td>60</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Magnet Rise</td>
@@ -2728,6 +3670,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Magnetic Flux</td>
@@ -2736,6 +3680,8 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Vaše Parta</td>
+<td>-</td>
 <td>
 <tr>
 <td>Magnitude</td>
@@ -2744,6 +3690,8 @@
 <td>-</td>
 <td>100%</td>
 <td>30</td>
+<td>Sousedící</td>
+<td>-</td>
 <td>
 <tr>
 <td>Mat Block</td>
@@ -2752,6 +3700,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Vaše Strana</td>
+<td>-</td>
 <td>
 <tr>
 <td>Me First</td>
@@ -2760,6 +3710,7 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>-</td>
 <td>
 <tr>
 <td>Mean Look</td>
@@ -2768,6 +3719,7 @@
 <td>-</td>
 <td>0%</td>
 <td>5</td>
+<td>-</td>
 <td>
 <tr>
 <td>Meditate</td>
@@ -2776,6 +3728,7 @@
 <td>-</td>
 <td>0%</td>
 <td>40</td>
+<td>-</td>
 <td>
 <tr>
 <td>Mega Drain</td>
@@ -2784,6 +3737,7 @@
 <td>40</td>
 <td>100%</td>
 <td>15</td>
+<td>-</td>
 <td>
 <tr>
 <td>Mega Kick</td>
@@ -2792,6 +3746,8 @@
 <td>120</td>
 <td>75%</td>
 <td>5</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Mega Punch</td>
@@ -2800,6 +3756,8 @@
 <td>80</td>
 <td>85%</td>
 <td>20</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Megahorn</td>
@@ -2808,6 +3766,8 @@
 <td>120</td>
 <td>85%</td>
 <td>10</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Memento</td>
@@ -2816,6 +3776,7 @@
 <td>-</td>
 <td>100%</td>
 <td>10</td>
+<td>-</td>
 <td>
 <tr>
 <td>Metal Burst</td>
@@ -2824,6 +3785,7 @@
 <td>-</td>
 <td>100%</td>
 <td>10</td>
+<td>-</td>
 <td>
 <tr>
 <td>Metal Claw</td>
@@ -2832,6 +3794,8 @@
 <td>50</td>
 <td>95%</td>
 <td>35</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Metal Sound</td>
@@ -2840,6 +3804,7 @@
 <td>-</td>
 <td>85%</td>
 <td>40</td>
+<td>-</td>
 <td>
 <tr>
 <td>Meteor Mash</td>
@@ -2848,6 +3813,8 @@
 <td>90</td>
 <td>90%</td>
 <td>10</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Metronome</td>
@@ -2856,6 +3823,7 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>-</td>
 <td>
 <tr>
 <td>Milk Drink</td>
@@ -2864,6 +3832,7 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>-</td>
 <td>
 <tr>
 <td>Mimic</td>
@@ -2872,6 +3841,7 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>-</td>
 <td>
 <tr>
 <td>Mind Blown</td>
@@ -2880,6 +3850,7 @@
 <td>150</td>
 <td>100%</td>
 <td>5</td>
+<td>-</td>
 <td>
 <tr>
 <td>Mind Reader</td>
@@ -2888,6 +3859,7 @@
 <td>-</td>
 <td>0%</td>
 <td>5</td>
+<td>-</td>
 <td>
 <tr>
 <td>Minimize</td>
@@ -2896,6 +3868,7 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>-</td>
 <td>
 <tr>
 <td>Miracle Eye</td>
@@ -2904,6 +3877,7 @@
 <td>-</td>
 <td>0%</td>
 <td>40</td>
+<td>-</td>
 <td>
 <tr>
 <td>Mirror Coat</td>
@@ -2912,6 +3886,7 @@
 <td>-</td>
 <td>100%</td>
 <td>20</td>
+<td>-</td>
 <td>
 <tr>
 <td>Mirror Move</td>
@@ -2920,6 +3895,7 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>-</td>
 <td>
 <tr>
 <td>Mirror Shot</td>
@@ -2928,6 +3904,7 @@
 <td>65</td>
 <td>85%</td>
 <td>10</td>
+<td>-</td>
 <td>
 <tr>
 <td>Mist</td>
@@ -2936,6 +3913,7 @@
 <td>-</td>
 <td>0%</td>
 <td>30</td>
+<td>-</td>
 <td>
 <tr>
 <td>Mist Ball</td>
@@ -2944,6 +3922,7 @@
 <td>70</td>
 <td>100%</td>
 <td>5</td>
+<td>-</td>
 <td>
 <tr>
 <td>Misty Terrain</td>
@@ -2952,6 +3931,7 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>-</td>
 <td>
 <tr>
 <td>Moonblast</td>
@@ -2960,6 +3940,7 @@
 <td>95</td>
 <td>100%</td>
 <td>15</td>
+<td>-</td>
 <td>
 <tr>
 <td>Moongeist Beam</td>
@@ -2968,6 +3949,7 @@
 <td>100</td>
 <td>100%</td>
 <td>5</td>
+<td>-</td>
 <td>
 <tr>
 <td>Moonlight</td>
@@ -2976,6 +3958,7 @@
 <td>-</td>
 <td>0%</td>
 <td>5</td>
+<td>-</td>
 <td>
 <tr>
 <td>Morning Sun</td>
@@ -2984,6 +3967,7 @@
 <td>-</td>
 <td>0%</td>
 <td>5</td>
+<td>-</td>
 <td>
 <tr>
 <td>Mud Bomb</td>
@@ -2992,6 +3976,7 @@
 <td>65</td>
 <td>85%</td>
 <td>10</td>
+<td>-</td>
 <td>
 <tr>
 <td>Mud Shot</td>
@@ -3000,6 +3985,7 @@
 <td>55</td>
 <td>95%</td>
 <td>15</td>
+<td>-</td>
 <td>
 <tr>
 <td>Mud Sport</td>
@@ -3008,6 +3994,7 @@
 <td>-</td>
 <td>0%</td>
 <td>15</td>
+<td>-</td>
 <td>
 <tr>
 <td>Mud-Slap</td>
@@ -3016,6 +4003,7 @@
 <td>20</td>
 <td>100%</td>
 <td>10</td>
+<td>-</td>
 <td>
 <tr>
 <td>Muddy Water</td>
@@ -3024,6 +4012,8 @@
 <td>90</td>
 <td>85%</td>
 <td>10</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Multi-Attack</td>
@@ -3032,6 +4022,9 @@
 <td>90</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Mystical Fire</td>
@@ -3040,6 +4033,8 @@
 <td>75</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Nasty Plot</td>
@@ -3048,6 +4043,9 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Já</td>
+<td></td>
+<td>-</td>
 <td>
 <tr>
 <td>Natural Gift</td>
@@ -3055,6 +4053,8 @@
 <td>Physical</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Nature Power</td>
@@ -3063,6 +4063,8 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Nature's Madness</td>
@@ -3070,6 +4072,8 @@
 <td>Special</td>
 <td>90%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Needle Arm</td>
@@ -3078,6 +4082,9 @@
 <td>60</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Night Daze</td>
@@ -3086,6 +4093,8 @@
 <td>85</td>
 <td>95%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Night Shade</td>
@@ -3094,6 +4103,9 @@
 <td>-</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Night Slash</td>
@@ -3102,6 +4114,8 @@
 <td>70</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Nightmare</td>
@@ -3110,6 +4124,8 @@
 <td>-</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Noble Roar</td>
@@ -3118,6 +4134,8 @@
 <td>-</td>
 <td>100%</td>
 <td>30</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Nuzzle</td>
@@ -3126,6 +4144,9 @@
 <td>20</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Oblivion Wing</td>
@@ -3134,6 +4155,8 @@
 <td>80</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Octazooka</td>
@@ -3142,6 +4165,8 @@
 <td>65</td>
 <td>85%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Odor Sleuth</td>
@@ -3150,6 +4175,8 @@
 <td>-</td>
 <td>0%</td>
 <td>40</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Ominous Wind</td>
@@ -3158,6 +4185,8 @@
 <td>60</td>
 <td>100%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Origin Pulse</td>
@@ -3166,6 +4195,8 @@
 <td>110</td>
 <td>85%</td>
 <td>10</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Outrage</td>
@@ -3174,6 +4205,9 @@
 <td>120</td>
 <td>100%</td>
 <td>10</td>
+<td>1 Náhodný</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Overheat</td>
@@ -3182,6 +4216,8 @@
 <td>130</td>
 <td>90%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Pain Split</td>
@@ -3190,6 +4226,8 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Parabolic Charge</td>
@@ -3198,6 +4236,8 @@
 <td>65</td>
 <td>100%</td>
 <td>20</td>
+<td>Sousedící</td>
+<td>-</td>
 <td>
 <tr>
 <td>Parting Shot</td>
@@ -3206,6 +4246,8 @@
 <td>-</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Pay Day</td>
@@ -3214,6 +4256,8 @@
 <td>40</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Payback</td>
@@ -3222,6 +4266,9 @@
 <td>50</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Peck</td>
@@ -3230,6 +4277,9 @@
 <td>35</td>
 <td>100%</td>
 <td>35</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Perish Song</td>
@@ -3238,6 +4288,8 @@
 <td>-</td>
 <td>0%</td>
 <td>5</td>
+<td>Sousedící</td>
+<td>-</td>
 <td>
 <tr>
 <td>Petal Blizzard</td>
@@ -3246,6 +4298,8 @@
 <td>90</td>
 <td>100%</td>
 <td>15</td>
+<td>Sousedící</td>
+<td>-</td>
 <td>
 <tr>
 <td>Petal Dance</td>
@@ -3254,6 +4308,9 @@
 <td>120</td>
 <td>100%</td>
 <td>10</td>
+<td>1 Náhodný</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Phantom Force</td>
@@ -3262,6 +4319,9 @@
 <td>90</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Photon Geyser</td>
@@ -3270,6 +4330,8 @@
 <td>100</td>
 <td>100%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Pin Missile</td>
@@ -3278,6 +4340,8 @@
 <td>25</td>
 <td>85%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Play Nice</td>
@@ -3286,6 +4350,8 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Play Rough</td>
@@ -3294,6 +4360,9 @@
 <td>90</td>
 <td>90%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Pluck</td>
@@ -3302,6 +4371,9 @@
 <td>60</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Poison Fang</td>
@@ -3310,6 +4382,9 @@
 <td>50</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Poison Gas</td>
@@ -3318,6 +4393,8 @@
 <td>-</td>
 <td>90%</td>
 <td>40</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Poison Jab</td>
@@ -3326,6 +4403,9 @@
 <td>80</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Poison Powder</td>
@@ -3334,6 +4414,8 @@
 <td>-</td>
 <td>75%</td>
 <td>35</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Poison Sting</td>
@@ -3342,6 +4424,8 @@
 <td>15</td>
 <td>100%</td>
 <td>35</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Poison Tail</td>
@@ -3350,6 +4434,9 @@
 <td>50</td>
 <td>100%</td>
 <td>25</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Pollen Puff</td>
@@ -3358,6 +4445,8 @@
 <td>90</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Pound</td>
@@ -3366,6 +4455,9 @@
 <td>40</td>
 <td>100%</td>
 <td>35</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Powder</td>
@@ -3374,6 +4466,8 @@
 <td>-</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Powder Snow</td>
@@ -3382,6 +4476,8 @@
 <td>40</td>
 <td>100%</td>
 <td>25</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Power Gem</td>
@@ -3390,6 +4486,8 @@
 <td>80</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Power Split</td>
@@ -3398,6 +4496,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Power Swap</td>
@@ -3406,6 +4506,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Power Trick</td>
@@ -3414,6 +4516,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Power Trip</td>
@@ -3422,6 +4526,10 @@
 <td>20</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Já</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Power Whip</td>
@@ -3431,6 +4539,9 @@
 <td>85%</td>
 <td>10</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Power-Up Punch</td>
@@ -3439,6 +4550,9 @@
 <td>40</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Precipice Blades</td>
@@ -3447,6 +4561,8 @@
 <td>120</td>
 <td>85%</td>
 <td>10</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Present</td>
@@ -3455,6 +4571,8 @@
 <td>-</td>
 <td>90%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Prismatic Laser</td>
@@ -3463,6 +4581,8 @@
 <td>160</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Protect</td>
@@ -3471,6 +4591,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Psybeam</td>
@@ -3479,6 +4601,8 @@
 <td>65</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Psych Up</td>
@@ -3487,6 +4611,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Psychic</td>
@@ -3495,6 +4621,8 @@
 <td>90</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Psychic Fangs</td>
@@ -3503,6 +4631,9 @@
 <td>85</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Psychic Terrain</td>
@@ -3511,6 +4642,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Obě Strany</td>
+<td>-</td>
 <td>
 <tr>
 <td>Psycho Boost</td>
@@ -3519,6 +4652,8 @@
 <td>140</td>
 <td>90%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Psycho Cut</td>
@@ -3527,6 +4662,8 @@
 <td>70</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Psycho Shift</td>
@@ -3535,6 +4672,8 @@
 <td>-</td>
 <td>90%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Psyshock</td>
@@ -3543,6 +4682,8 @@
 <td>80</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Psystrike</td>
@@ -3551,6 +4692,8 @@
 <td>100</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Psywave</td>
@@ -3559,6 +4702,8 @@
 <td>-</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Punishment</td>
@@ -3567,6 +4712,9 @@
 <td>-</td>
 <td>100%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Purify</td>
@@ -3575,6 +4723,8 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Pursuit</td>
@@ -3583,6 +4733,9 @@
 <td>40</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Quash</td>
@@ -3591,6 +4744,8 @@
 <td>-</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Quick Attack</td>
@@ -3599,6 +4754,9 @@
 <td>40</td>
 <td>100%</td>
 <td>30</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Quick Guard</td>
@@ -3607,6 +4765,8 @@
 <td>Status</td>
 <td>0%</td>
 <td>15</td>
+<td>Vaše Strana</td>
+<td>-</td>
 <td>
 <tr>
 <td>Quiver Dance</td>
@@ -3615,6 +4775,8 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Rage</td>
@@ -3623,6 +4785,9 @@
 <td>20</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Rage Powder</td>
@@ -3631,6 +4796,8 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Rain Dance</td>
@@ -3639,7 +4806,7 @@
 <td>-</td>
 <td>0%</td>
 <td>5</td>
-<td>
+<td>both side?
 <tr>
 <td>Rapid Spin</td>
 <td>Normal</td>
@@ -3647,6 +4814,9 @@
 <td>20</td>
 <td>100%</td>
 <td>40</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Razor Leaf</td>
@@ -3655,6 +4825,8 @@
 <td>55</td>
 <td>95%</td>
 <td>25</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Razor Shell</td>
@@ -3663,6 +4835,9 @@
 <td>75</td>
 <td>95%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Razor Wind</td>
@@ -3671,6 +4846,8 @@
 <td>80</td>
 <td>100%</td>
 <td>10</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Recover</td>
@@ -3679,6 +4856,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Recycle</td>
@@ -3687,6 +4866,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Reflect</td>
@@ -3695,6 +4876,8 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Vaše Strana</td>
+<td>-</td>
 <td>
 <tr>
 <td>Reflect Type</td>
@@ -3703,6 +4886,8 @@
 <td>-</td>
 <td>0%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Refresh</td>
@@ -3711,6 +4896,8 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Relic Song</td>
@@ -3719,6 +4906,8 @@
 <td>75</td>
 <td>100%</td>
 <td>10</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Rest</td>
@@ -3727,6 +4916,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Retaliate</td>
@@ -3735,6 +4926,9 @@
 <td>70</td>
 <td>100%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Return</td>
@@ -3743,6 +4937,9 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Revelation Dance</td>
@@ -3751,6 +4948,8 @@
 <td>90</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Revenge</td>
@@ -3759,6 +4958,9 @@
 <td>60</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Reversal</td>
@@ -3767,6 +4969,9 @@
 <td>-</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Roar</td>
@@ -3775,6 +4980,8 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Roar of Time</td>
@@ -3783,6 +4990,8 @@
 <td>150</td>
 <td>90%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Rock Blast</td>
@@ -3791,6 +5000,8 @@
 <td>25</td>
 <td>90%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Rock Climb</td>
@@ -3799,6 +5010,9 @@
 <td>90</td>
 <td>85%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Rock Polish</td>
@@ -3807,6 +5021,8 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Rock Slide</td>
@@ -3815,6 +5031,8 @@
 <td>75</td>
 <td>90%</td>
 <td>10</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Rock Smash</td>
@@ -3823,6 +5041,9 @@
 <td>40</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Rock Throw</td>
@@ -3831,6 +5052,8 @@
 <td>50</td>
 <td>90%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Rock Tomb</td>
@@ -3839,6 +5062,8 @@
 <td>60</td>
 <td>95%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Rock Wrecker</td>
@@ -3847,6 +5072,8 @@
 <td>150</td>
 <td>90%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Role Play</td>
@@ -3855,6 +5082,8 @@
 <td>-</td>
 <td>0%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Rolling Kick</td>
@@ -3863,6 +5092,9 @@
 <td>60</td>
 <td>85%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Rollout</td>
@@ -3871,6 +5103,9 @@
 <td>30</td>
 <td>90%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Roost</td>
@@ -3879,6 +5114,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Rototiller</td>
@@ -3887,6 +5124,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Sousedící</td>
+<td>-</td>
 <td>
 <tr>
 <td>Round</td>
@@ -3895,6 +5134,8 @@
 <td>60</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Sacred Fire</td>
@@ -3903,6 +5144,8 @@
 <td>100</td>
 <td>95%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Sacred Sword</td>
@@ -3911,6 +5154,9 @@
 <td>90</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Safeguard</td>
@@ -3919,6 +5165,8 @@
 <td>-</td>
 <td>0%</td>
 <td>25</td>
+<td>Vaše Strana</td>
+<td>-</td>
 <td>
 <tr>
 <td>Sand Attack</td>
@@ -3927,6 +5175,8 @@
 <td>-</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Sand Tomb</td>
@@ -3935,6 +5185,8 @@
 <td>35</td>
 <td>85%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Sandstorm</td>
@@ -3943,6 +5195,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Obě Strany</td>
+<td>-</td>
 <td>
 <tr>
 <td>Scald</td>
@@ -3951,6 +5205,8 @@
 <td>80</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Scary Face</td>
@@ -3959,6 +5215,8 @@
 <td>-</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Scratch</td>
@@ -3967,6 +5225,9 @@
 <td>40</td>
 <td>100%</td>
 <td>35</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Screech</td>
@@ -3975,6 +5236,8 @@
 <td>-</td>
 <td>85%</td>
 <td>40</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Searing Shot</td>
@@ -3983,6 +5246,8 @@
 <td>100</td>
 <td>100%</td>
 <td>5</td>
+<td>Sousedící</td>
+<td>-</td>
 <td>
 <tr>
 <td>Secret Power</td>
@@ -3991,6 +5256,8 @@
 <td>70</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Secret Sword</td>
@@ -3999,6 +5266,8 @@
 <td>85</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Seed Bomb</td>
@@ -4007,6 +5276,8 @@
 <td>80</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Seed Flare</td>
@@ -4015,6 +5286,8 @@
 <td>120</td>
 <td>85%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Seismic Toss</td>
@@ -4023,6 +5296,9 @@
 <td>-</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Self-Destruct</td>
@@ -4031,6 +5307,8 @@
 <td>200</td>
 <td>100%</td>
 <td>5</td>
+<td>Sousedící</td>
+<td>-</td>
 <td>
 <tr>
 <td>Shadow Ball</td>
@@ -4039,6 +5317,8 @@
 <td>80</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Shadow Bone</td>
@@ -4047,6 +5327,8 @@
 <td>85</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Shadow Claw</td>
@@ -4055,6 +5337,9 @@
 <td>70</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Shadow Force</td>
@@ -4063,6 +5348,9 @@
 <td>120</td>
 <td>100%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Shadow Punch</td>
@@ -4071,6 +5359,9 @@
 <td>60</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Shadow Sneak</td>
@@ -4079,6 +5370,9 @@
 <td>40</td>
 <td>100%</td>
 <td>30</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Sharpen</td>
@@ -4087,6 +5381,8 @@
 <td>-</td>
 <td>0%</td>
 <td>30</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Sheer Cold</td>
@@ -4094,6 +5390,8 @@
 <td>Special</td>
 <td>0%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Shell Smash</td>
@@ -4102,6 +5400,8 @@
 <td>-</td>
 <td>0%</td>
 <td>15</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Shell Trap</td>
@@ -4110,6 +5410,8 @@
 <td>150</td>
 <td>100%</td>
 <td>5</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Shift Gear</td>
@@ -4118,6 +5420,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Shock Wave</td>
@@ -4126,6 +5430,8 @@
 <td>60</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Shore Up</td>
@@ -4134,6 +5440,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Signal Beam</td>
@@ -4142,6 +5450,8 @@
 <td>75</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Silver Wind</td>
@@ -4150,6 +5460,8 @@
 <td>60</td>
 <td>100%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Simple Beam</td>
@@ -4158,6 +5470,8 @@
 <td>-</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Sing</td>
@@ -4166,6 +5480,8 @@
 <td>-</td>
 <td>55%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Sketch</td>
@@ -4174,6 +5490,8 @@
 <td>-</td>
 <td>0%</td>
 <td>1</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Skill Swap</td>
@@ -4182,6 +5500,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Skull Bash</td>
@@ -4190,6 +5510,9 @@
 <td>130</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Sky Attack</td>
@@ -4198,6 +5521,8 @@
 <td>140</td>
 <td>90%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Sky Drop</td>
@@ -4206,6 +5531,9 @@
 <td>60</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Sky Uppercut</td>
@@ -4214,6 +5542,9 @@
 <td>85</td>
 <td>90%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Slack Off</td>
@@ -4222,6 +5553,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Slam</td>
@@ -4230,6 +5563,9 @@
 <td>80</td>
 <td>75%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Slash</td>
@@ -4238,6 +5574,9 @@
 <td>70</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Sleep Powder</td>
@@ -4246,6 +5585,8 @@
 <td>-</td>
 <td>75%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Sleep Talk</td>
@@ -4254,6 +5595,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Sludge</td>
@@ -4262,6 +5605,8 @@
 <td>65</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Sludge Bomb</td>
@@ -4270,6 +5615,8 @@
 <td>90</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Sludge Wave</td>
@@ -4278,6 +5625,8 @@
 <td>95</td>
 <td>100%</td>
 <td>10</td>
+<td>Sousedící</td>
+<td>-</td>
 <td>
 <tr>
 <td>Smack Down</td>
@@ -4286,6 +5635,8 @@
 <td>50</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Smart Strike</td>
@@ -4294,6 +5645,9 @@
 <td>70</td>
 <td>0%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Smelling Salts</td>
@@ -4302,6 +5656,9 @@
 <td>70</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Smog</td>
@@ -4310,6 +5667,8 @@
 <td>30</td>
 <td>70%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Smokescreen</td>
@@ -4318,6 +5677,8 @@
 <td>-</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Snarl</td>
@@ -4326,6 +5687,8 @@
 <td>55</td>
 <td>95%</td>
 <td>15</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Snatch</td>
@@ -4334,6 +5697,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Snore</td>
@@ -4342,6 +5707,8 @@
 <td>50</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Soak</td>
@@ -4350,6 +5717,8 @@
 <td>-</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Soft-Boiled</td>
@@ -4358,6 +5727,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Solar Beam</td>
@@ -4366,6 +5737,8 @@
 <td>120</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Solar Blade</td>
@@ -4374,6 +5747,9 @@
 <td>125</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Sonic Boom</td>
@@ -4382,6 +5758,8 @@
 <td>-</td>
 <td>90%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Spacial Rend</td>
@@ -4390,6 +5768,8 @@
 <td>100</td>
 <td>95%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Spark</td>
@@ -4398,6 +5778,9 @@
 <td>65</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Sparkling Aria</td>
@@ -4406,6 +5789,8 @@
 <td>90</td>
 <td>100%</td>
 <td>10</td>
+<td>Sousedící</td>
+<td>-</td>
 <td>
 <tr>
 <td>Spectral Thief</td>
@@ -4414,6 +5799,9 @@
 <td>90</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Speed Swap</td>
@@ -4422,6 +5810,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Spider Web</td>
@@ -4430,6 +5820,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Spike Cannon</td>
@@ -4438,6 +5830,8 @@
 <td>20</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Spikes</td>
@@ -4446,7 +5840,8 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
-<td>
+<td>Ostatní Strany</td>
+<td>?
 <tr>
 <td>Spiky Shield</td>
 <td>Grass</td>
@@ -4454,6 +5849,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Spirit Shackle</td>
@@ -4462,6 +5859,8 @@
 <td>80</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Spit Up</td>
@@ -4469,6 +5868,8 @@
 <td>Special</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Spite</td>
@@ -4477,6 +5878,8 @@
 <td>-</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Splash</td>
@@ -4485,6 +5888,8 @@
 <td>-</td>
 <td>0%</td>
 <td>40</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Spore</td>
@@ -4493,6 +5898,8 @@
 <td>-</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Spotlight</td>
@@ -4501,6 +5908,8 @@
 <td>-</td>
 <td>0%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Stealth Rock</td>
@@ -4509,6 +5918,8 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Ostatní Strany</td>
+<td>-</td>
 <td>
 <tr>
 <td>Steam Eruption</td>
@@ -4517,6 +5928,8 @@
 <td>110</td>
 <td>95%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Steamroller</td>
@@ -4525,6 +5938,9 @@
 <td>65</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Steel Wing</td>
@@ -4533,6 +5949,9 @@
 <td>70</td>
 <td>90%</td>
 <td>25</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Sticky Web</td>
@@ -4541,7 +5960,8 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
-<td>
+<td>Ostatní Strany</td>
+<td>?
 <tr>
 <td>Stockpile</td>
 <td>Normal</td>
@@ -4549,6 +5969,8 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Stomp</td>
@@ -4557,6 +5979,9 @@
 <td>65</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Stomping Tantrum</td>
@@ -4565,6 +5990,9 @@
 <td>75</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Stone Edge</td>
@@ -4573,6 +6001,8 @@
 <td>100</td>
 <td>80%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Stored Power</td>
@@ -4581,6 +6011,8 @@
 <td>20</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Storm Throw</td>
@@ -4589,6 +6021,9 @@
 <td>60</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Strength</td>
@@ -4597,6 +6032,9 @@
 <td>80</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Strength Sap</td>
@@ -4605,6 +6043,8 @@
 <td>-</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>String Shot</td>
@@ -4613,6 +6053,8 @@
 <td>-</td>
 <td>95%</td>
 <td>40</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Struggle</td>
@@ -4620,7 +6062,10 @@
 <td>Physical</td>
 <td>50</td>
 <td>100%</td>
-<td>0</td>
+<td>1</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Struggle Bug</td>
@@ -4629,6 +6074,8 @@
 <td>50</td>
 <td>100%</td>
 <td>20</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Stun Spore</td>
@@ -4637,6 +6084,8 @@
 <td>-</td>
 <td>75%</td>
 <td>30</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Submission</td>
@@ -4645,6 +6094,9 @@
 <td>80</td>
 <td>80%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Substitute</td>
@@ -4653,6 +6105,9 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Já</td>
+<td></td>
+<td>-</td>
 <td>
 <tr>
 <td>Sucker Punch</td>
@@ -4661,6 +6116,9 @@
 <td>70</td>
 <td>100%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Sunny Day</td>
@@ -4669,6 +6127,8 @@
 <td>-</td>
 <td>0%</td>
 <td>5</td>
+<td>Obě Strany</td>
+<td>-</td>
 <td>
 <tr>
 <td>Sunsteel Strike</td>
@@ -4677,6 +6137,9 @@
 <td>100</td>
 <td>100%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Super Fang</td>
@@ -4684,6 +6147,9 @@
 <td>Physical</td>
 <td>90%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Superpower</td>
@@ -4692,6 +6158,9 @@
 <td>120</td>
 <td>100%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Supersonic</td>
@@ -4700,6 +6169,8 @@
 <td>-</td>
 <td>55%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Surf</td>
@@ -4708,6 +6179,8 @@
 <td>90</td>
 <td>100%</td>
 <td>15</td>
+<td>Sousedící</td>
+<td>-</td>
 <td>
 <tr>
 <td>Swagger</td>
@@ -4716,6 +6189,8 @@
 <td>-</td>
 <td>85%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Swallow</td>
@@ -4724,6 +6199,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Sweet Kiss</td>
@@ -4732,6 +6209,8 @@
 <td>-</td>
 <td>75%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Sweet Scent</td>
@@ -4740,6 +6219,8 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Swift</td>
@@ -4748,6 +6229,8 @@
 <td>60</td>
 <td>100%</td>
 <td>20</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Switcheroo</td>
@@ -4756,6 +6239,8 @@
 <td>-</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Swords Dance</td>
@@ -4764,6 +6249,8 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Synchronoise</td>
@@ -4772,6 +6259,8 @@
 <td>120</td>
 <td>100%</td>
 <td>15</td>
+<td>Sousedící</td>
+<td>-</td>
 <td>
 <tr>
 <td>Synthesis</td>
@@ -4780,6 +6269,8 @@
 <td>-</td>
 <td>0%</td>
 <td>5</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Tackle</td>
@@ -4788,6 +6279,9 @@
 <td>40</td>
 <td>100%</td>
 <td>35</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Tail Glow</td>
@@ -4796,6 +6290,8 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Tail Slap</td>
@@ -4804,6 +6300,9 @@
 <td>25</td>
 <td>85%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Tail Whip</td>
@@ -4812,6 +6311,8 @@
 <td>-</td>
 <td>100%</td>
 <td>30</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Tailwind</td>
@@ -4820,6 +6321,8 @@
 <td>-</td>
 <td>0%</td>
 <td>30</td>
+<td>Vaše Strana</td>
+<td>-</td>
 <td>
 <tr>
 <td>Take Down</td>
@@ -4828,6 +6331,9 @@
 <td>90</td>
 <td>85%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Taunt</td>
@@ -4836,6 +6342,8 @@
 <td>-</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Tearful Look</td>
@@ -4844,6 +6352,8 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Techno Blast</td>
@@ -4852,6 +6362,8 @@
 <td>85</td>
 <td>100%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Teeter Dance</td>
@@ -4860,6 +6372,8 @@
 <td>-</td>
 <td>100%</td>
 <td>20</td>
+<td>Sousedící</td>
+<td>-</td>
 <td>
 <tr>
 <td>Telekinesis</td>
@@ -4868,6 +6382,8 @@
 <td>-</td>
 <td>0%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Teleport</td>
@@ -4876,6 +6392,8 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Thief</td>
@@ -4884,6 +6402,9 @@
 <td>40</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Thousand Arrows</td>
@@ -4901,7 +6422,10 @@
 <td>Thousand Waves</td>
 <td>Ground</td>
 <td>Physical</td>
-<td>?100%</td>
+<td>100%</td>
+<td>10</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Thrash</td>
@@ -4910,6 +6434,9 @@
 <td>120</td>
 <td>100%</td>
 <td>10</td>
+<td>1 Náhodný</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Throat Chop</td>
@@ -4918,6 +6445,9 @@
 <td>80</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Thunder</td>
@@ -4926,6 +6456,8 @@
 <td>110</td>
 <td>70%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Thunder Fang</td>
@@ -4934,6 +6466,9 @@
 <td>65</td>
 <td>95%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Thunder Punch</td>
@@ -4942,6 +6477,9 @@
 <td>75</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Thunder Shock</td>
@@ -4950,6 +6488,8 @@
 <td>40</td>
 <td>100%</td>
 <td>30</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Thunder Wave</td>
@@ -4958,6 +6498,8 @@
 <td>-</td>
 <td>90%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Thunderbolt</td>
@@ -4966,6 +6508,8 @@
 <td>90</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Tickle</td>
@@ -4974,6 +6518,8 @@
 <td>-</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Topsy-Turvy</td>
@@ -4982,6 +6528,8 @@
 <td>-</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Torment</td>
@@ -4990,6 +6538,8 @@
 <td>-</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Toxic</td>
@@ -4998,6 +6548,8 @@
 <td>-</td>
 <td>90%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Toxic Spikes</td>
@@ -5006,6 +6558,8 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Ostatní Strany</td>
+<td>-</td>
 <td>
 <tr>
 <td>Toxic Thread</td>
@@ -5014,6 +6568,8 @@
 <td>-</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Transform</td>
@@ -5022,6 +6578,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Tri Attack</td>
@@ -5030,6 +6588,8 @@
 <td>80</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Trick</td>
@@ -5038,6 +6598,8 @@
 <td>-</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Trick Room</td>
@@ -5046,6 +6608,8 @@
 <td>-</td>
 <td>0%</td>
 <td>5</td>
+<td>Obě Strany</td>
+<td>-</td>
 <td>
 <tr>
 <td>Trick-or-Treat</td>
@@ -5054,6 +6618,8 @@
 <td>-</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Triple Kick</td>
@@ -5062,6 +6628,9 @@
 <td>10</td>
 <td>90%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Trop Kick</td>
@@ -5070,6 +6639,9 @@
 <td>70</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Trump Card</td>
@@ -5078,6 +6650,9 @@
 <td>-</td>
 <td>100%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Twineedle</td>
@@ -5086,6 +6661,8 @@
 <td>25</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Twister</td>
@@ -5094,6 +6671,8 @@
 <td>40</td>
 <td>100%</td>
 <td>20</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>U-turn</td>
@@ -5102,6 +6681,9 @@
 <td>70</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Uproar</td>
@@ -5110,6 +6692,8 @@
 <td>90</td>
 <td>100%</td>
 <td>10</td>
+<td>1 Náhodný</td>
+<td>-</td>
 <td>
 <tr>
 <td>V-create</td>
@@ -5118,6 +6702,9 @@
 <td>180</td>
 <td>95%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Vacuum Wave</td>
@@ -5126,6 +6713,8 @@
 <td>40</td>
 <td>100%</td>
 <td>30</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Venom Drench</td>
@@ -5134,6 +6723,8 @@
 <td>-</td>
 <td>100%</td>
 <td>20</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Venoshock</td>
@@ -5142,6 +6733,8 @@
 <td>65</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Vice Grip</td>
@@ -5150,6 +6743,9 @@
 <td>55</td>
 <td>100%</td>
 <td>30</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Vine Whip</td>
@@ -5158,6 +6754,9 @@
 <td>45</td>
 <td>100%</td>
 <td>25</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Vital Throw</td>
@@ -5166,6 +6765,9 @@
 <td>70</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Volt Switch</td>
@@ -5174,6 +6776,8 @@
 <td>70</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Volt Tackle</td>
@@ -5182,6 +6786,9 @@
 <td>120</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Wake-Up Slap</td>
@@ -5190,6 +6797,9 @@
 <td>70</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Water Gun</td>
@@ -5198,6 +6808,8 @@
 <td>40</td>
 <td>100%</td>
 <td>25</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Water Pledge</td>
@@ -5206,6 +6818,8 @@
 <td>80</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Water Pulse</td>
@@ -5214,6 +6828,8 @@
 <td>60</td>
 <td>100%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Water Shuriken</td>
@@ -5222,6 +6838,8 @@
 <td>15</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Water Sport</td>
@@ -5230,6 +6848,8 @@
 <td>-</td>
 <td>0%</td>
 <td>15</td>
+<td>Obě Strany</td>
+<td>-</td>
 <td>
 <tr>
 <td>Water Spout</td>
@@ -5238,6 +6858,8 @@
 <td>150</td>
 <td>100%</td>
 <td>5</td>
+<td>Mnoho Dalších</td>
+<td>-</td>
 <td>
 <tr>
 <td>Waterfall</td>
@@ -5246,6 +6868,9 @@
 <td>80</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Weather Ball</td>
@@ -5254,6 +6879,8 @@
 <td>50</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Whirlpool</td>
@@ -5262,6 +6889,8 @@
 <td>35</td>
 <td>85%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Whirlwind</td>
@@ -5270,6 +6899,8 @@
 <td>-</td>
 <td>0%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Wide Guard</td>
@@ -5278,6 +6909,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Vaše Strana</td>
+<td>-</td>
 <td>
 <tr>
 <td>Wild Charge</td>
@@ -5286,6 +6919,9 @@
 <td>90</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Will-O-Wisp</td>
@@ -5294,6 +6930,8 @@
 <td>-</td>
 <td>0%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Wing Attack</td>
@@ -5302,6 +6940,9 @@
 <td>60</td>
 <td>100%</td>
 <td>35</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Wish</td>
@@ -5310,6 +6951,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Withdraw</td>
@@ -5318,6 +6961,8 @@
 <td>-</td>
 <td>0%</td>
 <td>40</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Wonder Room</td>
@@ -5326,6 +6971,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Obě Strany</td>
+<td>-</td>
 <td>
 <tr>
 <td>Wood Hammer</td>
@@ -5334,6 +6981,9 @@
 <td>120</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Work Up</td>
@@ -5342,6 +6992,8 @@
 <td>-</td>
 <td>0%</td>
 <td>30</td>
+<td>Já</td>
+<td>-</td>
 <td>
 <tr>
 <td>Worry Seed</td>
@@ -5350,6 +7002,8 @@
 <td>-</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Wrap</td>
@@ -5358,6 +7012,9 @@
 <td>15</td>
 <td>90%</td>
 <td>20</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Wring Out</td>
@@ -5366,6 +7023,9 @@
 <td>-</td>
 <td>100%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>X-Scissor</td>
@@ -5374,6 +7034,9 @@
 <td>80</td>
 <td>100%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
+<td>
 <td>
 <tr>
 <td>Yawn</td>
@@ -5382,6 +7045,8 @@
 <td>-</td>
 <td>0%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Zap Cannon</td>
@@ -5390,6 +7055,8 @@
 <td>120</td>
 <td>50%</td>
 <td>5</td>
+<td>Cíl</td>
+<td>-</td>
 <td>
 <tr>
 <td>Zen Headbutt</td>
@@ -5398,6 +7065,8 @@
 <td>80</td>
 <td>90%</td>
 <td>15</td>
+<td>Cíl</td>
+<td>Kontakt</td>
 <td>
 <tr>
 <td>Zing Zap</td>
@@ -5406,6 +7075,8 @@
 <td>80</td>
 <td>100%</td>
 <td>10</td>
+<td>Cíl</td>
+<td>Kontakt</td>
 <td>
 </tbody>
 </table>
