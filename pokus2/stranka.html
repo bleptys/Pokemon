@@ -1,0 +1,77 @@
+<!doctype html>
+<!--[if lte IE 8]> <html class="no-js old-ie" lang="cz"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="cz">
+<!--<![endif]-->
+
+  <head>
+
+    <meta charset="utf-8">
+    
+    <title>
+      ____Title____
+    </title>
+
+    <meta name="description" content="____Popis____">    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+
+    <script>
+        document.documentElement.className =
+         document.documentElement.className.replace("no-js","js");
+    </script>      
+
+  </head>
+  
+  <body>
+
+    <a href="#main">skok na hlavní obsah</a>
+
+    <div class="container">
+
+      <main id="main" role="main" class="content">
+
+        <h1>
+          Hello, I'm Blanka!<br>
+          Minimal HTML boilerplate.
+        </h1>
+
+<input type="text"  name='emploi' placeholder='Sale'>
+                    <!--les prof-->
+<input type="text"  name='emploi' placeholder='Professeur'>
+                   <!--les classes-->
+<input type="text"  name='emploi' placeholder='Class'>
+        
+      </main><!-- /.content -->
+      
+
+    </div><!-- /.container -->
+  
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+  // parse stored JSON if it exists otherwise an empty object 
+  var values = JSON.parse(localStorage.getItem('emploi') || '{}');
+
+  var inputs = document.getElementsByName('emploi');
+
+
+  for (let i = 0; i < inputs.length; i++) {
+    var x = inputs[i];
+    x.value = values[i] || '';// stored value if it exists or empty string
+
+    x.onchange = function() {
+      // assign value to the object above
+      values[i] = this.value;
+      // store updated version of object
+      localStorage.setItem('emploi', JSON.stringify(values));
+    }
+  }
+
+});
+</script>
+    
+  </body>
+    
+</html>
