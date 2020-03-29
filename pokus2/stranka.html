@@ -38,11 +38,11 @@
           Minimal HTML boilerplate.
         </h1>
 
-<input type="text"  name='emploi' placeholder='Sale'>
+<input type="number"  name='emploi' placeholder='Sale'>
                     <!--les prof-->
-<input type="text"  name='emploi' placeholder='Professeur'>
+<input type="number"  name='emploi' placeholder='Professeur'>
                    <!--les classes-->
-<input type="text"  name='emploi' placeholder='Class'>
+<input type="number"  name='emploi' placeholder='Class'>
         
       </main><!-- /.content -->
       
@@ -51,7 +51,6 @@
   
     <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // parse stored JSON if it exists otherwise an empty object 
   var values = JSON.parse(localStorage.getItem('emploi') || '{}');
 
   var inputs = document.getElementsByName('emploi');
@@ -59,12 +58,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
   for (let i = 0; i < inputs.length; i++) {
     var x = inputs[i];
-    x.value = values[i] || '';// stored value if it exists or empty string
+    x.value = values[i] || '';
 
     x.onchange = function() {
-      // assign value to the object above
       values[i] = this.value;
-      // store updated version of object
       localStorage.setItem('emploi', JSON.stringify(values));
     }
   }
