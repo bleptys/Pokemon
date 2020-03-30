@@ -1,15 +1,20 @@
 <!doctype html>
+<!--[if lte IE 8]> <html class="no-js old-ie" lang="cz"> <![endif]-->
+<!--[if gt IE 8]><!-->
 <html class="no-js" lang="cz">
+<!--<![endif]-->
 
   <head>
 
     <meta charset="utf-8">
     
     <title>
-      ____Title____
+      GEN.7 ABI
     </title>
 
-    <meta name="description" content="____Popis____">    
+    <meta name="description" content="Pokemon Sword and Shield ability dex">    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">  
 
@@ -21,28 +26,24 @@
     <link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/blanka.css">
 	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<nav id="menu">
+			<ul id="menu-zavrit">
+			<li><a href=”index.html”>Home</a></li>
+			<li><a href=”ability.html”>Ability</a></li>
+            <li><a href=”attacks.html”></a>Útoky</li>
+			<li><a href="#menu-zavrit ">&#215; Zavřít menu</a></li>
+                <li><a href="#menu ">&#9776; Menu</a></li>
+            </ul>
+		</nav>
+	
+	<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Jako myšičky, jako myšičky" title="Psssssst">
 
-  </head>
-  
-  <body>
-
-    <a href="#main">skok na hlavní obsah</a>
-
-    <div class="container">
-
-		<main id="main" role="main" class="content">
-	  
-			<nav>
-				<ul>
-					<li><a href="index.html">Intro</a></li>
-					<li><a href="attacks.html">Attacks</a></li>
-					<li><a href="ability.html">Ability</a></li>
-				</ul>
-			</nav>
-			
-			<table style="width:100%">
-			<caption></caption>
-<tr>
+<div style="overflow-x:auto;">
+	
+<table id="myTable">
+<tr class="header">
 <th>Název</th>
 <th>Popis</th>
 </tr>
@@ -262,11 +263,7 @@
 
 <td>Zen Mode</td><td>
 			</table>
-        
-		</main><!-- /.content -->
-      
-
-    </div><!-- /.container -->
+</div>
   
     <script src="js/script.js"></script>
     
